@@ -1,0 +1,31 @@
+{
+  "name": "simpro-renja",
+  "version": "1.0.0",
+  "description": "Sistem Informasi Manajemen Proposal RENJA - BAPPERIDA Kabupaten Banyumas",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "test:phase1": "node backend/test_phase1.js",
+    "test:phase2": "node backend/test_phase2.js",
+    "test:phase3": "node backend/test_phase3.js",
+    "test:phase5": "node backend/test_phase5.js",
+    "test:security": "node backend/test_phase6_security_blackbox.js",
+    "test:all": "node backend/test_phase1.js && node backend/test_phase2.js && node backend/test_phase3.js && node backend/test_phase5.js && node backend/test_phase6_security_blackbox.js"
+  },
+  "keywords": [
+    "simpro-renja",
+    "bapperida",
+    "banyumas",
+    "sipd",
+    "pokir"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
